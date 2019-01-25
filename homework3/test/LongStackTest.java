@@ -204,23 +204,23 @@ public class LongStackTest {
    @Test (timeout=1000)
    public void testInterpretLong() {
       String s = "1 -10 4 8 3 - + * +";
-      assertEquals ("expression: " + Aout.toString (s), -89,
+      assertEquals ("expression: " + Bout.toString (s), -89,
          LongStack.interpret (s));
       s = "156 154 152 - 3 + -";
-      assertEquals ("expression: " + Aout.toString (s), 151,
+      assertEquals ("expression: " + Bout.toString (s), 151,
          LongStack.interpret (s));
    }
 
    @Test (timeout=1000)
    public void testInterpretTokenizer() {
       String s = "1  2    +";
-      assertEquals ("expression: " + Aout.toString (s), 3, 
+      assertEquals ("expression: " + Bout.toString (s), 3,
          LongStack.interpret (s));
       s = "   \t \t356  \t \t";
-      assertEquals ("expression: " + Aout.toString (s), 356,
+      assertEquals ("expression: " + Bout.toString (s), 356,
          LongStack.interpret (s));
       s = "\t2 \t5 +   \t";
-      assertEquals ("expression: " + Aout.toString (s), 7, 
+      assertEquals ("expression: " + Bout.toString (s), 7,
          LongStack.interpret (s));
    }
 }

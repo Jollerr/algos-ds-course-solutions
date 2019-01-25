@@ -3,10 +3,6 @@ import java.util.*;
 public class Node implements java.util.Iterator<Node> {
 
    public static void main (String[] param) {
-//      String s = "(B1,C)A";
-//      Node t = Node.parsePostfix (s);
-//      String v = t.leftParentheticRepresentation();
-//      System.out.println (s + " ==> " + v); // (B1,C)A ==> A(B1,C)
       String s = "((A)B,((C,)D)E"; //  "((A),(B)C)D" , "((A)B(C)D)E" , "((A)(C)D)E"
       Node t = Node.parsePostfix (s);
       String v = t.leftParentheticRepresentation();

@@ -23,60 +23,6 @@ public class IntSorting {
     *           command line parameters
     */
    public static void main(String[] args) {
-//      final int[] origArray = new int[MAX_SIZE];
-//      Random generator = new Random();
-//      for (int i = 0; i < MAX_SIZE; i++) {
-//         origArray[i] = generator.nextInt(1000);
-//      }
-//      int rightLimit = MAX_SIZE / (int) Math.pow(2., NUMBER_OF_ROUNDS);
-//
-////       Start a competition
-//      for (int round = 0; round < NUMBER_OF_ROUNDS; round++) {
-//         int[] acopy;
-//         long stime, ftime, diff;
-//         rightLimit = 2 * rightLimit;
-//         System.out.println();
-//         System.out.println("Length: " + rightLimit);
-//
-//         acopy = Arrays.copyOf(origArray, rightLimit);
-//         stime = System.nanoTime();
-//         insertionSort(acopy);
-//         ftime = System.nanoTime();
-//         diff = ftime - stime;
-//         System.out.printf("%34s%11d%n", "Insertion sort: time (ms): ", diff / 1000000);
-//         checkOrder(acopy);
-//
-//         acopy = Arrays.copyOf(origArray, rightLimit);
-//         stime = System.nanoTime();
-//         binaryInsertionSort(acopy);
-//         ftime = System.nanoTime();
-//         diff = ftime - stime;
-//         System.out.printf("%34s%11d%n", "Binary insertion sort: time (ms): ", diff / 1000000);
-//         checkOrder(acopy);
-//
-//         acopy = Arrays.copyOf(origArray, rightLimit);
-//         stime = System.nanoTime();
-//         quickSort(acopy, 0, acopy.length);
-//         ftime = System.nanoTime();
-//         diff = ftime - stime;
-//         System.out.printf("%34s%11d%n", "Quicksort: time (ms): ", diff / 1000000);
-//         checkOrder(acopy);
-//
-//         acopy = Arrays.copyOf(origArray, rightLimit);
-//         stime = System.nanoTime();
-//         Arrays.sort(acopy);
-//         ftime = System.nanoTime();
-//         diff = ftime - stime;
-//         System.out.printf("%34s%11d%n", "Java API  Arrays.sort: time (ms): ", diff / 1000000);
-//         checkOrder(acopy);
-//
-//         acopy = Arrays.copyOf(origArray, rightLimit);
-//         stime = System.nanoTime();
-//         radixSort(acopy);
-//         ftime = System.nanoTime();
-//         diff = ftime - stime;
-//         System.out.printf("%34s%11d%n", "Radix sort: time (ms): ", diff / 1000000);
-//         checkOrder(acopy);
          int[] arr = new int[]{4,47,2,76,99,23,23,47,2,4};
          IntSorting.binaryInsertionSort(arr);
          System.out.println(Arrays.toString(arr));

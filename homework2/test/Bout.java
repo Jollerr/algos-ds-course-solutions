@@ -4,7 +4,7 @@
  *   and prettyprinting (toPrettyString(...)).
  * @author Jaanus
  */
-public class Aout {
+public class Bout {
 
    /** Just testing. */
    public static void main (String[] args) {
